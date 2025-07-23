@@ -5,6 +5,8 @@
   "homepage": "https://search-n-sort.github.io/search-n-sort",
   "type": "module",
   "scripts": {
+    "predeploy:": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "npm run sass && vite",
     "build": "npm run sass && tsc -b && vite build",
     "lint": "eslint .",
