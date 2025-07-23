@@ -1,0 +1,131 @@
+.search {
+	&-bar {
+		align-items: center;
+		background: linear-gradient(0deg, #08080822 0%, #080808ad 40%);
+		display: flex;
+		flex-direction: column;
+		height: 200px;
+		justify-content: center;
+		padding: 20px 0;
+		width: 100%;
+	}
+
+	&-options {
+		color: #d5d3d3;
+		display: flex;
+		flex-direction: column;
+
+		ul {
+			display: flex;
+			padding: 0;
+
+			li {
+				border-bottom: 1px solid #fff;
+				cursor: pointer;
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 1.13;
+				list-style: none;
+				padding: 0 2.58rem 0.33rem 2.58rem;
+				text-align: center;
+				transition: color 0.25s;
+				width: 4.33rem;
+
+				&:hover {
+					border-bottom: 1px solid #cb94c4;
+					color: #cb94c4;
+				}
+
+				&.search-active {
+					border-bottom: 1px solid #c562b6;
+					color: #c562b6;
+				}
+			}
+		}
+	}
+
+	&-inputs {
+		display: flex;
+		justify-content: center;
+
+		input {
+			background-color: #617782;
+			border: 1px solid #617782;
+			border-radius: 4px;
+			font-size: 16px;
+			font-weight: 500;
+			margin-right: 2.22rem;
+			padding: 0.66rem 1rem;
+			width: 21rem;
+
+			&::placeholder {
+				color: #d5d3d3;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&-button {
+		background-color: #c562b6;
+		border: 0;
+		border-radius: 4px;
+		color: #ffffff;
+		font-size: 22px;
+		font-weight: 700;
+		margin-top: 30px;
+		padding: 0.72rem 1.7rem;
+		text-align: center;
+		transition: background-color 0.5s;
+
+		&:hover {
+			background-color: #ad5ba1;
+			cursor: pointer;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.search-bar {
+		height: auto;
+		padding: 10px;
+	}
+
+	.search-options {
+		align-items: center;
+
+		ul {
+			flex-direction: column;
+			margin: 0;
+			padding: 0;
+			width: 80%;
+		}
+
+		li {
+			border-bottom: none;
+			font-size: 1rem;
+			padding: 0.5rem 0;
+			text-align: center;
+			width: 100%;
+		}
+	}
+
+	.search-inputs {
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+
+		input {
+			margin-bottom: 10px;
+			margin-right: 0;
+			width: 80%;
+		}
+	}
+
+	.search-button {
+		width: 80%;
+	}
+}

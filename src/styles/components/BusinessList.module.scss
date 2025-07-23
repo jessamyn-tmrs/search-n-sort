@@ -1,0 +1,18 @@
+.businessList {
+	&-card {
+		display: flex;
+	}
+
+	&-title {
+		color: #617782;
+		text-align: center;
+		padding: 15px 0 0 0;
+	}
+
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0;
+	}
+}
